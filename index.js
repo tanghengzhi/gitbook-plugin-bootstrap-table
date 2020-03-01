@@ -2,7 +2,6 @@ module.exports = {
 	website: {
 			assets: './assets',
 			js: [
-				'https://code.jquery.com/jquery-3.3.1.min.js',
 				'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
 				'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
 				'https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js',
@@ -12,9 +11,9 @@ module.exports = {
 			],
 			css: [
 				'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
-				'https://use.fontawesome.com/releases/v5.6.3/css/all.css',
 				'https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css',
-				'https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.css'
+				'https://unpkg.com/jquery-resizable-columns@0.2.3/dist/jquery.resizableColumns.css',
+				'plugin.css'
 			]
     }
 };
