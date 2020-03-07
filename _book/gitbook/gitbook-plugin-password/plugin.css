@@ -1,0 +1,22 @@
+.book {
+    display: none;
+}
+
+.modal {
+    background-image: url(https://cn.bing.com/th?id=OHR.OtterCreekVT_EN-CN6409944679_UHD.jpg);
+    display: block;
+}
+
+.modal form {
+    margin: auto;
+}
+
+.modal form input {
+    min-width: 300px;
+    min-height: 40px;
+}
+
+.modal form button {
+    min-width: 80px;
+    min-height: 40px;
+}

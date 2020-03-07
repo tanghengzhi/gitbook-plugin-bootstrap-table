@@ -1,3 +1,8 @@
 {
-	"plugins" : [ "bootstrap-table" ]
+    "plugins" : [ "bootstrap-table", "password", "tooltips" ],
+    "pluginsConfig":{
+        "password": {
+            "global": "qwerty"
+        }
+    }
 }
