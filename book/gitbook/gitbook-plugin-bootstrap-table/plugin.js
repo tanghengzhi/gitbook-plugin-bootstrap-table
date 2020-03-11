@@ -1,15 +1,8 @@
 var gitbook = window.gitbook;
 
 gitbook.events.on('page.change', function() {
-	$('table').bootstrapTable({
-		search: true,
-		resizable: true,
-		showColumns: true,
-		showToggle: true
-	})
-
 	/**
-	 * treegrid
+	 * treegrid 
 	 */
 	$("table").find('tbody').find('tr').each(function(id) {
 		$(this).addClass('treegrid-' + id);
@@ -27,5 +20,24 @@ gitbook.events.on('page.change', function() {
 		}
 	})
 
-  $("table").treegrid();
+	var $table = $("table");
+	$table.bootstrapTable({
+		search: true,
+		resizable: true,
+		showColumns: true,
+		showToggle: true,
+		onPostBody: function() {
+			var cardView = $table.bootstrapTable('getOptions').cardView
+			var columns = $table.bootstrapTable('getOptions').columns
+	
+			if (!cardView && columns && columns[0][0].visible) {
+				$table.treegrid({
+				treeColumn: 0,
+				onChange: function() {
+					$table.bootstrapTable('resetWidth')
+				}
+				})
+			}
+		}
+	})
 });
