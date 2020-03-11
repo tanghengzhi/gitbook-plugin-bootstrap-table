@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-bootstrap-table",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Bootstrap Table Plugin for Gitbook",
   "engines": {
       "gitbook": ">1.x.x"
